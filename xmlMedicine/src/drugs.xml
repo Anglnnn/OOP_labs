@@ -1,0 +1,51 @@
+<Medicines>
+    <Medicine id="1">
+        <Name>Аспірин</Name>
+        <Pharm>Pharm1</Pharm>
+        <Group>Анальгетики</Group>
+        <Analogs>
+            <Analog>Парацетамол</Analog>
+            <Analog>Нурофен</Analog>
+        </Analogs>
+        <Versions>
+            <Version>
+                <Certificate number="12345" issueDate="2023-01-01" expiryDate="2025-01-01" registeringAuthority="Authority1"/>
+                <Package type="Таблетки" quantity="30" price="25"/>
+                <Dosage>1 таблетка на добу</Dosage>
+            </Version>
+            <!-- Додайте інші версії, якщо потрібно -->
+        </Versions>
+    </Medicine>
+    <Medicine id="2">
+         <Name>Ношпа</Name>
+        <Pharm>Pharm1</Pharm>
+        <Group>Анальгетики</Group>
+        <Analogs>
+            <Analog>Спазмалгон</Analog>
+        </Analogs>
+        <Versions>
+            <Version>
+                <Certificate number="13345" issueDate="2023-01-01" expiryDate="2025-01-01" registeringAuthority="Authority1"/>
+                <Package type="Таблетки" quantity="30" price="25"/>
+                <Dosage>1 таблетка на добу</Dosage>
+            </Version>
+            <!-- Додайте інші версії, якщо потрібно -->
+        </Versions>
+    </Medicine>
+    <Medicine id="3">
+        <Name>Мукалтин</Name>
+        <Pharm>Pharm3</Pharm>
+        <Group>Анальгетики</Group>
+        <Analogs>
+            <Analog>Гербіон</Analog>
+        </Analogs>
+        <Versions>
+            <Version>
+                <Certificate number="13344" issueDate="2023-01-01" expiryDate="2025-01-01" registeringAuthority="Authority1"/>
+                <Package type="Таблетки" quantity="20" price="25"/>
+                <Dosage>1 таблетка на добу</Dosage>
+            </Version>
+            <!-- Додайте інші версії, якщо потрібно -->
+        </Versions>
+    </Medicine>
+</Medicines>

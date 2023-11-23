@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="Medicines">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Medicine" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Name" type="xs:string"/>
+                            <xs:element name="Pharm" type="xs:string"/>
+                            <xs:element name="Group" type="xs:string"/>
+                            <xs:element name="Analogs" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Analog" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Versions">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Version" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Certificate">
+                                                        <xs:complexType>
+                                                            <xs:attribute name="number" type="xs:string"/>
+                                                            <xs:attribute name="issueDate" type="xs:date"/>
+                                                            <xs:attribute name="expiryDate" type="xs:date"/>
+                                                            <xs:attribute name="registeringAuthority" type="xs:string"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="Package">
+                                                        <xs:complexType>
+                                                            <xs:attribute name="type" type="xs:string"/>
+                                                            <xs:attribute name="quantity" type="xs:integer"/>
+                                                            <xs:attribute name="price" type="xs:decimal"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="Dosage" type="xs:string"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:integer" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
