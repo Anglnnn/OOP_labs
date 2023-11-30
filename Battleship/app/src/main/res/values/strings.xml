@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Battleship</string>
+    <string name="start">Start</string>
+    <string name="place_1cell_ships">Розставте кораблі</string>
+    <string name="rotate">Перевернути</string>
+    <string name="startGame">Почати гру</string>
+</resources>
